@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<p id="demo">Auf den Knopf klicken um die  Position zu ermitteln.</p>
+<p id="demo">Click the button to get your position.</p>
 
-<button onclick="getLocation()">Wo bin ich?</button>
+<button onclick="getLocation()">Try It</button>
 
 <div id="mapholder"></div>
 
@@ -15,7 +15,7 @@ function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
-        x.innerHTML = "Geolocation wird von deinem browser nicht unterstützt.";
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 

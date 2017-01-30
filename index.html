@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<p>Click the button to get your coordinates.</p>
+<p>Klicke auf den Knopf um deine Koordinaten zu ermitteln.</p>
 
-<button onclick="getLocation()">Try It</button>
+<button onclick="getLocation()">Knopf</button>
 
 <p id="demo"></p>
 
@@ -20,8 +20,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
+    x.innerHTML = "Längengrad (Latitude - LAT): " + position.coords.latitude + 
+    "<br>Breitengrad (Longitute - lon): " + position.coords.longitude;
 }
 
 function showError(error) {
